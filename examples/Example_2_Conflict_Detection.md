@@ -6,3 +6,10 @@ IF directiveA IMPLIES increaseWorkload THEN
         REPORT "Conflict detected."
     END IF
 END IF
+
+### Expected Output:
+Action: Stored directiveA and directiveB.
+Result: directiveA implies increased workload.
+Considered directiveB.
+Detected conflict between workload balance and minimizing overtime.
+Reported "Conflict detected."
