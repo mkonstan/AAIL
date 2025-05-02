@@ -1,0 +1,1 @@
+See /schema/ for YAML and XML schema. Control flow, action verbs, comparison operators, and transparency tags detailed.
