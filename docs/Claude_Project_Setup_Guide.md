@@ -55,3 +55,8 @@ Outcome of an evaluation or directive consideration.
 
 **REMEMBER (REM)**  
 Verb for storing values in state.
+
+
+
+## Claude Instructions
+Please refer to the separate file `Claude_Instructions_v0_2_pre.md` for the latest Claude project instructions.

@@ -1,0 +1,20 @@
+
+# Example directive: Checks if a workload exceeds the allowed threshold.
+DIRECTIVE: workloadCheck
+
+:start eval YAML, Markdown, AAIL
+
+yaml:
+  maxWorkload: 50
+  currentWorkload: 60
+
+Markdown:
+  ## Purpose
+  This directive checks whether the current workload exceeds the predefined maximum.
+
+AAIL:
+    - IF currentWorkload GT maxWorkload THEN
+        - REPORT "Workload exceeds allowed maximum."
+    - ELSE
+        - REPORT "Workload is within acceptable limits."
+:end eval

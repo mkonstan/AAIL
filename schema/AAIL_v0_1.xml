@@ -1,9 +1,0 @@
-<AAIL version="0.1">
-  <description>Declarative, markup-safe instruction language for AI meta-reasoning and transparency.</description>
-  <verbs><verb>REMEMBER</verb><verb>RECALL</verb><verb>CACHE</verb><verb>FORGET</verb><verb>VERIFY</verb><verb>EVALUATE</verb><verb>REPORT</verb><verb>MATCH</verb><verb>LIKE</verb><verb>IMPLIES</verb><verb>FILTER</verb><verb>SELECT</verb><verb>COUNT</verb><verb>SUM</verb><verb>EXISTS</verb><verb>CONSIDER</verb></verbs>
-  <comparison_operators><operator>EQ</operator><operator>NEQ</operator><operator>GT</operator><operator>LT</operator><operator>GTE</operator><operator>LTE</operator></comparison_operators>
-  <control_flow><keyword>IF</keyword><keyword>THEN</keyword><keyword>ELSE</keyword><keyword>CASE</keyword></control_flow>
-  <state_scopes><scope>GLOBAL</scope><scope>LOCAL</scope><scope>TEMPORARY</scope></state_scopes>
-  <transparency_tags><tag>REPORT</tag><tag>TRACE</tag></transparency_tags>
-  <design_principles><principle>Declarative-first</principle><principle>Semantic transparency</principle><principle>Markup compatibility</principle><principle>Cross-model interpretability</principle></design_principles>
-</AAIL>

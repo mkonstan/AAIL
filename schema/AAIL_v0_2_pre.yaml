@@ -57,3 +57,20 @@ AAIL:
     - Semantic transparency
     - Markup compatibility
     - Cross-model interpretability
+
+## Eval Block Format Declaration Rule
+
+- Simple eval blocks containing only AAIL logic can omit type declaration.
+- For eval blocks containing multiple formats (YAML, Markdown, XML, etc.), the format types must be declared in the :start eval line.
+- Syntax example:
+    :start eval YAML, Markdown, AAIL
+
+- Body must then segregate content using clear section headers:
+    yaml:
+      ...
+    Markdown:
+      ...
+    xml:
+      ...
+    AAIL:
+      ...

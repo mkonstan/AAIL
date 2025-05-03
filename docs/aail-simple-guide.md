@@ -505,3 +505,23 @@ END IF
 - `CONSIDER DIRECTIVE` checks the directive logic without automatic execution.
 - `RES REM` stores the evaluation result for later conditional logic.
 - This pattern allows transparent meta-reasoning and flexible response logic.
+
+## Eval Block Format Declaration
+
+- **Simple Use:** If the eval block only contains AAIL logic, no format declaration is needed.
+- **Complex Use:** If multiple formats are used, declare them in the :start eval line.
+
+Example:
+:start eval YAML, Markdown, AAIL
+
+yaml:
+  teamSize: 5
+
+Markdown:
+  ## Purpose
+  Evaluate workload conflicts.
+
+AAIL:
+    - IF workload GT capacity THEN
+        - REPORT "Overload detected."
+:end eval
