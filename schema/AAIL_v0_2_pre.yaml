@@ -1,0 +1,49 @@
+AAIL:
+  version: "0.2-pre"
+  description: >
+    Declarative, markup-safe instruction language for AI meta-reasoning and transparency.
+    Hybrid design inspired by BASIC, SQL, and ColdFusion.
+  verbs:
+    - REMEMBER
+    - RECALL
+    - CACHE
+    - FORGET
+    - VERIFY
+    - EVALUATE
+    - REPORT
+    - MATCH
+    - LIKE
+    - IMPLIES
+    - FILTER
+    - SELECT
+    - COUNT
+    - SUM
+    - EXISTS
+    - CONSIDER
+  comparison_operators:
+    - EQ
+    - NEQ
+    - GT
+    - LT
+    - GTE
+    - LTE
+  control_flow:
+    - IF
+    - THEN
+    - ELSE
+    - CASE
+  state_scopes:
+    - GLOBAL
+    - LOCAL
+    - TEMPORARY
+  transparency_tags:
+    - REPORT
+    - TRACE
+  evaluation_states:
+    - VALID: Value or condition can be logically evaluated
+    - INVALID: Includes NULL, UNDEFINED, or undetermined states
+  design_principles:
+    - Declarative-first
+    - Semantic transparency
+    - Markup compatibility
+    - Cross-model interpretability
