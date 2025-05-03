@@ -42,6 +42,10 @@ AAIL:
   evaluation_states:
     - VALID: Value or condition can be logically evaluated
     - INVALID: Includes NULL, UNDEFINED, or undetermined states
+  consider_result_syntax:
+    - CONSIDER DIRECTIVE <directiveName>
+    - CONSIDER DIRECTIVE <directiveName> RES REM <variableName>
+    - Note: RES REM stores the result of the directive evaluation into a state variable.
   design_principles:
     - Declarative-first
     - Semantic transparency
