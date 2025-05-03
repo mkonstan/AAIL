@@ -467,3 +467,41 @@ Represents the outcome of an evaluation or directive consideration. Can be store
 
 **REMEMBER (REM)**  
 Assigns a value or evaluation result to a named variable in state. Essential for creating persistent or temporary memory in AAIL logic.
+
+## Example: Using CONSIDER DIRECTIVE with RES REM
+
+### Directive Definition
+Let's assume we have a directive defined as:
+
+directive:
+  name: workloadConflictResolution
+  description: Identifies conflicts between workload balance and overtime minimization.
+  scope: GLOBAL
+  logic:
+    - IF directiveA IMPLIES increaseWorkload THEN
+        - CONSIDER DIRECTIVE directiveB
+        - IF directiveB CONFLICTS directiveA THEN
+            - REPORT "Conflict detected between workload balance and overtime minimization."
+
+### Main Logic
+
+REMEMBER directiveA = "Maximize team workload balance"
+REMEMBER directiveB = "Minimize overtime"
+
+CONSIDER DIRECTIVE workloadConflictResolution RES REM conflictCheckResult
+
+IF conflictCheckResult EQ TRUE THEN
+    REPORT "Workload and overtime objectives are in conflict."
+ELSE
+    REPORT "No conflict detected between workload and overtime objectives."
+END IF
+
+### Expected Output
+- The system evaluates the workloadConflictResolution directive.
+- If a conflict exists, `conflictCheckResult` will be TRUE.
+- The appropriate REPORT line will be triggered based on the result.
+
+### Reasoning
+- `CONSIDER DIRECTIVE` checks the directive logic without automatic execution.
+- `RES REM` stores the evaluation result for later conditional logic.
+- This pattern allows transparent meta-reasoning and flexible response logic.

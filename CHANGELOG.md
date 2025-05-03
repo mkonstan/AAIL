@@ -9,3 +9,5 @@
 - Finalized CONSIDER directive syntax: only RES REM supported for storing results.
 
 - Defined RESULT/RES and REMEMBER/REM in schema, simple guide, and Claude project setup guide.
+
+- Added robust CONSIDER DIRECTIVE usage example to aail-simple-guide.md.
