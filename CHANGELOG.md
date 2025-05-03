@@ -7,3 +7,5 @@
 - Added updated aail-simple-guide.md to /docs. Clarified v0.2-pre evaluation state behavior.
 
 - Finalized CONSIDER directive syntax: only RES REM supported for storing results.
+
+- Defined RESULT/RES and REMEMBER/REM in schema, simple guide, and Claude project setup guide.

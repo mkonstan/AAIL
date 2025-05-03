@@ -459,3 +459,11 @@ REPORT "Analysis complete for user {userName}."
 ## Try It Yourself!
 
 Copy any of these examples and try to predict what will happen. Then check if your prediction matches the expected output!
+
+## Terms
+
+**RESULT (RES)**  
+Represents the outcome of an evaluation or directive consideration. Can be stored for future reference.
+
+**REMEMBER (REM)**  
+Assigns a value or evaluation result to a named variable in state. Essential for creating persistent or temporary memory in AAIL logic.

@@ -46,6 +46,12 @@ AAIL:
     - CONSIDER DIRECTIVE <directiveName>
     - CONSIDER DIRECTIVE <directiveName> RES REM <variableName>
     - Note: RES REM stores the result of the directive evaluation into a state variable.
+  result_terms:
+    - RESULT: Full term indicating the outcome of an evaluation.
+    - RES: Shorthand for RESULT.
+  state_assignment_terms:
+    - REMEMBER: Full verb for assigning a value to state.
+    - REM: Shorthand for REMEMBER.
   design_principles:
     - Declarative-first
     - Semantic transparency

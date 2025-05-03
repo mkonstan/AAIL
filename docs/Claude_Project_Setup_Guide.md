@@ -46,3 +46,12 @@ When providing AAIL logic lines, expect Claude to:
 1. Interpret verbs/operators using the schema.
 2. Recall example patterns from primer and examples.
 3. Apply reasoning in alignment with benchmarked outputs.
+
+
+## Terms
+
+**RESULT (RES)**  
+Outcome of an evaluation or directive consideration.
+
+**REMEMBER (REM)**  
+Verb for storing values in state.
