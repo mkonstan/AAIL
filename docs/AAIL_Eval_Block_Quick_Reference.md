@@ -1,40 +1,25 @@
+# AAIL Eval Block Quick Reference v0.3-pre
 
-# AAIL Eval Block Syntax Cheat Sheet
+## Multi-format Blocks
+- YAML, Markdown, XML, AAIL allowed.
 
-## 🔹 Simple AAIL-Only Block (type declaration optional)
-
-```plaintext
-:start eval
-    - IF x EQ y THEN
-        - REPORT "x equals y."
-:end eval
+### Example Block
 ```
-
-## 🔹 Multi-Format Block (type declaration required)
-
-```plaintext
-:start eval YAML, Markdown, AAIL
+:start eval YAML, AAIL
 
 yaml:
   threshold: 10
 
-Markdown:
-  ## Purpose
-  Evaluate if value exceeds threshold.
-
 AAIL:
-    - IF value GT threshold THEN
-        - REPORT "Value exceeds threshold."
+  REM count IS 5
+  VERIFY count IS NOT threshold
+  IF count IS NOT threshold THEN
+      REPORT "Count below threshold."
+  END IF
 :end eval
 ```
 
-## 🔹 Format Declaration Rules
-
-| Format | Body Header | Notes |
-|---|---|---|
-| YAML | `yaml:` | Structured data |
-| Markdown | `Markdown:` | Human-readable comments |
-| XML | `xml:` | Metadata, schema |
-| AAIL | `AAIL:` | Reasoning logic (default if no header) |
-
-**Default:** If `:start eval` has no types declared → assume **AAIL only**.
+## Directive Invocation
+```
+EVAL DIRECTIVE validateInput REM RES RESULT
+```

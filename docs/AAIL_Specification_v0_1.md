@@ -1,1 +1,0 @@
-Refer to the schema YAML/XML and action verbs in /schema/. Full specification follows AAIL v0.1 principles.
